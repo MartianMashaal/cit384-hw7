@@ -1,0 +1,147 @@
+/* Color Palette
+Source: https://superdesigner.co/resources/color-palettes
+#0D1B2A - dark navy
+#1B263B - navy
+#415A77 - slate blue
+#778DA9 - soft blue
+#E0E1DD - light gray
+*/
+
+/* Global styles
+------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background: #E0E1DD;
+    color: #0D1B2A;
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Merriweather', Georgia, serif;
+}
+
+h1 {
+    margin: 15px 0;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 {
+    margin: 0 0 20px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+h3 {
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+.column-narrow h3, .column-wide p:first-child {
+    margin-top: 0;
+}
+
+.organization {
+    margin: 5px 0;
+    font-weight: 700;
+}
+
+/* Header and Footer
+------------------------------------*/
+header {
+    background: #1B263B;
+    color: #E0E1DD;
+}
+
+.profile-img {
+    display: block;
+    height: auto;
+    border-radius: 50%;
+}
+
+header h1, header h2 {
+    margin: 0;
+}
+
+header h2 {
+    font-size: 23px;
+}
+
+footer {
+    background: #0D1B2A;
+    color: #E0E1DD;
+    text-align: center;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+    color: #E0E1DD;
+}
+
+.contact-info a:hover, .contact-info a:focus {
+    color: #778DA9;
+}
+
+/* Work Experience
+------------------------------------*/
+.work-experience {
+    background: #E0E1DD;
+    color: #0D1B2A;
+}
+
+/* Education
+------------------------------------*/
+.education {
+    background: #415A77;
+    color: #FFFFFF;
+}
+
+/* Stack the columns on narrow screens. */
+@media (max-width: 650px) {
+    .column-narrow, .column-wide {
+        width: 100%;
+        float: none;
+        padding-right: 0;
+        min-height: 0;
+    }
+
+    header .column-narrow {
+        width: 175px;
+        margin-bottom: 20px;
+    }
+}
